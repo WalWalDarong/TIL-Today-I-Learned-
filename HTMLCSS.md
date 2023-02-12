@@ -14,3 +14,13 @@
 <div> 태그 background-image 장단점:
 - 장: 속성 부여가 편하고 유지보수에 용이하다
 - semantic tag가 아니기 때문에 html 파일 자체의 가독성이 낮다. 
+
+## [🚀 Check Point] 23. 레이아웃의 모든 것
+  
+ 그리고 블로그를 작성해야 합니다. 블로그를 작성할 때는 아래 사이트, replit 뿐만 아니라 youtube, 다른 좋은 블로그 등 여러 자료를 참고하고 작성해주시면 됩니다. 각자 편한 블로그 채널(티스토리, velog, medium 등)에 포스팅을 아래의 주제로 작성해 주세요.
+
+1. position 속성 - relative, absolute, fixed
+
+  
+  
+2. inline, inline-block, block 에 대해서
