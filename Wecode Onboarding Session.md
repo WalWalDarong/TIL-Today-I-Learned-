@@ -12,7 +12,7 @@ Java Script 적용할 수 있음
 - console.log("test")
 - 혹시 console.log로 데이터 출력해보셨나요?
    
-Network   
+3. Network   
 : front & back이 같이 보는 곳
 
 - status code: 200 ok = back - front 통신이 잘 됐다
@@ -21,11 +21,13 @@ Network
 - 위쪽은 속도: 늦게 들어온 것들 왜 늦게 들어왔는지 최적화도 확인할 수 있음
 
    
-Application
+4. Application
 브라우저가 가진 저장소
-: 저장소를 어떻게 사용할지는 기업마다 방식이 다름
+: 저장소를 어떻게 사용할지는 기업마다 방식이 다름   
+   
 Local storage: 삭제 안됨
 - 자동 로그인
+- 보안 이슈로 local storage에 민감한 정보는 넣으면 안됨, 해킹당할 수 있음
    
 Session sotrage: browser 끄면 삭제됨
 - 최근 본 상품 리스트
