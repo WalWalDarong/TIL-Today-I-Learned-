@@ -11,6 +11,7 @@ Java Script 적용할 수 있음
 - console로 바로 웹페이지에서 구현해 볼 수 있음
 - console.log("test")
 - 혹시 console.log로 데이터 출력해보셨나요?
+- java script 연습할 수 있음
    
 3. Network   
 : front & back이 같이 보는 곳
