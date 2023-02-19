@@ -14,3 +14,7 @@ var 함수 이름 = function () { return}
 
     // 매개변수가 없는 함수는 괄호가 필요:
     () => { statements }
+
+Object의 property는 순서가 없음
+출력될 때 순서 바뀌어서 나옴
+Index도 없음
