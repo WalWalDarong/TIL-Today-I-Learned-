@@ -18,3 +18,10 @@ var 함수 이름 = function () { return}
 Object의 property는 순서가 없음
 출력될 때 순서 바뀌어서 나옴
 Index도 없음
+
+
+###object
+#### dot notation VS bracket notation
+: dot notation은 key를 string으로 인식, 변수(variable)로 설정한 key는 dot notation으로 사용 불가
+=> varialbe에 key 할당하는 건 bracket notation으로만 사용 가능
+> bracket 안에 변수는 ''없이, key는 '' 있이 사용
