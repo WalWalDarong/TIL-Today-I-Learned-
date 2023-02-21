@@ -36,3 +36,37 @@ Session sotrage: browser 끄면 삭제됨
 cookies : 시간 set 해두면 삭제됨
 - 오늘 하루 보지 않기 클릭 팝업창
    
+# OS - Linux
+### 파일 구조
+- Directory라고 부름
+- 무조건 Root부터 시작, 최상위 공간, / 기호로 접근
+- home은 user의 공간이다, ~ 기호로 접근
+- bin: Binary 기본 명령어들 들어 있음
+
+-- 절대 경로 vs 상대 경로
+- 상대경로: .현재 경로, .. 상위경
+
+리눅스는 모든 걸 파일로 함
+앞에 .이 붙은 dot 파일을 설정 파일이라고 함. 숨김 파일로 간주됨.   
+
+- 환경 변수 env   
+: OS가 변수를 다 저장해둔 곳   
+사용자가 지정도 가능   
+dot 파일 .env라고 부름   
+민감하고 공유하면 안되는 값들 환경변수로 활
+
+(Window 랑 Linux는 커널이 다름
+Git Bash 다운로드 받아서 사용해야 함
+Mac이나 Ubuntu가 필요함)
+
+pwd: 내 위치 알려주는 명령
+ls
+ls -a
+cd
+mkdir: make directory
+touch: 파일 생성
+vi: 파일 편집
+- i: insert
+- :wq 저장하고 나가기
+- :w 저장
+- :q 나가기 :q! 저장 안 하고 
