@@ -20,8 +20,14 @@ Object의 property는 순서가 없음
 Index도 없음
 
 
-###object
+### object
 #### dot notation VS bracket notation
 : dot notation은 key를 string으로 인식, 변수(variable)로 설정한 key는 dot notation으로 사용 불가
 > variable에 key 할당하는 건 bracket notation으로만 사용 가능   
 > bracket 안에 변수는 ''없이, key는 '' 있이 사용
+
+### Function
+*  인수에 순서가 있으니, 그걸 해결하려면 function 안에서 object 사용
+* function({key1: value1, key2: value2, key3:value3})
+* Return = 반환과 동시에 "종료"
+* 
