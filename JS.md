@@ -30,4 +30,5 @@ Index도 없음
 *  인수에 순서가 있으니, 그걸 해결하려면 function 안에서 object 사용
 * function({key1: value1, key2: value2, key3:value3})
 * Return = 반환과 동시에 "종료"
-* 
+
+* 변수명 줄임말 쓰지 말기 코드가 복잡한데 줄임말까지 쓰면 협업하기 힘듦
