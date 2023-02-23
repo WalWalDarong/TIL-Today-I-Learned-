@@ -39,3 +39,6 @@ Index도 없음
 * 배열 method 사용, 함수형 프로그래밍 e.g., array.filter VS array.map
 * map, for일치?, 같은 걸 많이 씀
 => 배열이 어렵고 헷갈림 
+
+* 사망 연산자? '?'
+> a === 1-? //a는 10'입니다' : a는 10이 아닙니다
