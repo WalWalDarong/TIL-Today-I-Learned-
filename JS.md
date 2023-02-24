@@ -175,3 +175,36 @@ var randomInt = Math.floor(Math.random() * 10);
 위 코드에서 Math.floor() 함수는 주어진 숫자를 내림한 정수를 반환합니다. 따라서 Math.random() * 10은 0 이상 10 미만의 부동소수점 숫자를 반환하며, 이를 Math.floor() 함수로 내림하여 0 이상 9 이하의 정수를 얻을 수 있습니다.
 
 또한, Math.random() 함수를 이용하여 다양한 무작위 알고리즘을 구현할 수 있습니다. 예를 들어, 카드 섞기, 로또 번호 생성, 게임에서의 무작위 이벤트 등에 활용할 수 있습니다.
+
+### parseInt() & parseFloat()
+parseInt()와 parseFloat() 함수는 자바스크립트에서 문자열을 정수나 부동소수점 숫자로 변환할 때 사용하는 함수입니다.
+
+parseInt() 함수는 문자열에서 정수를 추출하는 데 사용됩니다. 이 함수는 문자열을 해석하고, 첫 번째 숫자를 발견한 시점에서 나머지 문자를 무시하며, 이후 숫자가 아닌 문자가 나타날 때까지의 숫자만 추출합니다. 예를 들어, 다음 코드에서 parseInt() 함수는 문자열 "42"를 정수 42로 변환합니다.
+
+```javascript
+Copy code
+var str = "42";
+var num = parseInt(str);
+console.log(num); // 42
+```
+또한, parseInt() 함수는 문자열이 특정 진수로 표현된 경우, 해당 진수의 정수로 변환할 수 있습니다. parseInt() 함수는 두 개의 인수를 받을 수 있으며, 두 번째 인수는 변환할 진수(base)를 지정합니다. 예를 들어, 다음 코드에서 parseInt() 함수는 16진수 문자열 "FF"를 10진수 정수 255로 변환합니다.
+
+```javascript
+Copy code
+var hex = "FF";
+var num = parseInt(hex, 16);
+console.log(num); // 255
+```
+parseFloat() 함수는 문자열에서 부동소수점 숫자를 추출하는 데 사용됩니다. 이 함수는 parseInt() 함수와 유사하게 문자열을 해석하며, 첫 번째 소수점을 발견한 시점에서 나머지 문자를 무시하고, 이후 숫자가 아닌 문자가 나타날 때까지의 숫자만 추출합니다. 예를 들어, 다음 코드에서 parseFloat() 함수는 문자열 "3.14"를 부동소수점 숫자 3.14로 변환합니다.
+
+```javascript
+Copy code
+var str = "3.14";
+var num = parseFloat(str);
+console.log(num); // 3.14
+```
+따라서, parseInt() 함수와 parseFloat() 함수는 자바스크립트에서 문자열을 숫자로 변환할 때 사용되며, 각각 정수와 부동소수점 숫자를 추출하는 데 특화되어 있습니다.
+
+
+
+
