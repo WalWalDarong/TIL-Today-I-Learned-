@@ -90,3 +90,28 @@ while (i < 10) {
  const로 선언된 변수는 값을 변경할 수 없습니다. 상수(constant)와 같은 역할을 합니다.
  const로 선언된 객체나 배열은 값을 변경할 수 있지만, 객체나 배열 자체를 다른 객체나 배열로 재할당할 수 없습니다.
 > 따라서, 변수의 값이 변하지 않는 경우 const를 사용하고, 값이 변하는 변수는 let을 사용하는 것이 좋습니다. var는 호이스팅 특성 때문에 혼란을 일으킬 수 있으므로, let과 const를 사용하는 것이 권장됩니다.
+
+### typeof: Symbol
+자바스크립트 Symbol 타입은 ES6에서 도입된 원시 데이터 타입(primitive data type) 중 하나입니다. Symbol은 유일한(unique) 값을 나타내는데 사용됩니다. Symbol 값은 항상 유일하며, 다른 어떤 값과도 일치하지 않습니다.
+
+Symbol 값은 다음과 같은 방법으로 생성됩니다.
+
+```javascript
+Copy code
+const mySymbol = Symbol();
+```
+위 예제에서 mySymbol 변수에는 새로운 Symbol 값이 할당됩니다. 이때 생성된 Symbol 값은 유일하며, 다른 Symbol 값과도 일치하지 않습니다.
+
+Symbol 값은 객체의 프로퍼티 키(property key)로 사용될 수 있습니다. 예를 들어 다음과 같은 객체를 만들 수 있습니다.
+
+```javascript
+Copy code
+const myObj = {
+  [Symbol("key")]: "value",
+};
+```
+위 예제에서 [Symbol("key")]는 Symbol 값이고, 이를 객체의 프로퍼티 키로 사용하고 있습니다. 이렇게 Symbol 값을 사용하면 다른 프로퍼티와 충돌하지 않는 유일한 키를 생성할 수 있습니다.
+
+또한, Symbol 값은 내장 객체에도 사용됩니다. 예를 들어, Symbol.iterator는 이터레이터(iterator)를 생성하는 메서드를 가리키는 Symbol 값입니다. 이러한 내장 Symbol 값은 자바스크립트에서 기본적으로 제공되며, 이를 활용하면 객체의 동작을 제어할 수 있습니다.
+
+Symbol 값은 다른 값과 혼동되지 않는 유일한 값을 나타내는데 사용됩니다. 이를 활용하면 객체의 프로퍼티 키와 같은 곳에서 충돌이 발생하지 않도록 할 수 있으며, 내장 Symbol 값은 객체의 동작을 제어하는 데 사용됩니다.
