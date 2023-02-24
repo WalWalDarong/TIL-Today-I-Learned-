@@ -50,7 +50,6 @@ for문은 초기식, 조건식, 증감식으로 구성된 반복문입니다. fo
 
 예시:
 ```js
-javascript
 Copy code
 for (var i = 0; i < 10; i++) {
   console.log(i);
@@ -62,7 +61,6 @@ while문은 조건식으로만 구성된 반복문입니다. while문은 일반�
 
 예시:
 ```js
-javascript
 Copy code
 var i = 0;
 
