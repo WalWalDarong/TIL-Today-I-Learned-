@@ -162,3 +162,16 @@ if (isNaN(num)) {
 }
 ```
 위 예제에서 isNaN 함수를 사용해 num 값이 NaN인지를 확인하고 있습니다.
+
+### Math.random()
+Math.random()은 자바스크립트에서 난수(random number)를 생성하는 함수입니다. 이 함수는 0 이상 1 미만의 부동소수점(pseudo-random floating-point) 숫자를 반환합니다.
+
+Math.random() 함수는 매번 실행될 때마다 다른 값을 반환하므로, 이를 활용하여 무작위로 선택하는 기능을 구현할 수 있습니다. 예를 들어, 0 이상 10 미만의 정수 중에서 무작위로 선택하고자 한다면, 다음과 같은 코드를 사용할 수 있습니다.
+
+```javascript
+Copy code
+var randomInt = Math.floor(Math.random() * 10);
+```
+위 코드에서 Math.floor() 함수는 주어진 숫자를 내림한 정수를 반환합니다. 따라서 Math.random() * 10은 0 이상 10 미만의 부동소수점 숫자를 반환하며, 이를 Math.floor() 함수로 내림하여 0 이상 9 이하의 정수를 얻을 수 있습니다.
+
+또한, Math.random() 함수를 이용하여 다양한 무작위 알고리즘을 구현할 수 있습니다. 예를 들어, 카드 섞기, 로또 번호 생성, 게임에서의 무작위 이벤트 등에 활용할 수 있습니다.
