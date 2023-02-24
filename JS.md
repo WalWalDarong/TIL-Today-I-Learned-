@@ -132,3 +132,35 @@ Symbol 값은 다른 값과 혼동되지 않는 유일한 값을 나타내는데
 - `undefined`
 
 <br>
+### typeof: NaN
+자바스크립트에서 NaN(Not-a-Number)은 숫자가 아님을 나타내는 값입니다. NaN은 다음과 같은 경우에 발생합니다.
+
+수학적으로 유효하지 않은 연산을 수행하는 경우
+```javascript
+Copy code
+const result = 0 / 0; // NaN
+```
+숫자가 아닌 값을 숫자로 변환하려는 경우
+
+```javascript
+Copy code
+const result = parseInt("hello"); // NaN
+```
+NaN은 자바스크립트에서 특수한 값으로 취급됩니다. NaN은 어떤 값과도 일치하지 않으며, 자신과도 일치하지 않습니다. 따라서, NaN === NaN의 결과는 false입니다.
+
+NaN은 typeof 연산자를 사용해도 "number" 타입으로 판별됩니다. 이는 NaN이 숫자 타입이긴 하지만, 숫자가 아니기 때문입니다.
+
+NaN 값은 주로 오류 처리에 사용됩니다. 예를 들어, parseInt 함수는 문자열을 정수로 변환하는 함수입니다. 하지만, 인수로 전달된 문자열이 숫자가 아닐 경우 NaN 값을 반환합니다. 따라서, parseInt 함수의 결과가 NaN인지를 확인해 오류 처리를 할 수 있습니다.
+
+```javascript
+Copy code
+const input = "hello";
+const num = parseInt(input);
+
+if (isNaN(num)) {
+  console.log("Input is not a number");
+} else {
+  console.log("Input is a number");
+}
+```
+위 예제에서 isNaN 함수를 사용해 num 값이 NaN인지를 확인하고 있습니다.
