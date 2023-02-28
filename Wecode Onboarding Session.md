@@ -139,4 +139,4 @@ Mac book: iterm 2 터미널 설치 > 설정할 거 거의 없음, 기본 터미�
 
 > Server Error
 >> 500: Internal Server Error - 서버에서 에러가 났을 
-- Backend 측에 문제가 있을 가능성이 
+>> - Backend 측에 문제가 있을 가능성이 
