@@ -1,7 +1,7 @@
 ## Week 1 - HTML/CSS
 ### Replit Assignment
 
-### Week2-개발자 도구
+## Week2-개발자 도구
 F12   
 패널   
 Elements HRML&CSS   
