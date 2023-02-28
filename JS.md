@@ -50,7 +50,7 @@ for문은 초기식, 조건식, 증감식으로 구성된 반복문입니다. fo
 
 예시:
 ```js
-Copy code
+
 for (var i = 0; i < 10; i++) {
   console.log(i);
 }
@@ -61,7 +61,7 @@ while문은 조건식으로만 구성된 반복문입니다. while문은 일반�
 
 예시:
 ```js
-Copy code
+
 var i = 0;
 
 while (i < 10) {
@@ -95,7 +95,7 @@ while (i < 10) {
 Symbol 값은 다음과 같은 방법으로 생성됩니다.
 
 ```javascript
-Copy code
+
 const mySymbol = Symbol();
 ```
 위 예제에서 mySymbol 변수에는 새로운 Symbol 값이 할당됩니다. 이때 생성된 Symbol 값은 유일하며, 다른 Symbol 값과도 일치하지 않습니다.
@@ -103,7 +103,7 @@ const mySymbol = Symbol();
 Symbol 값은 객체의 프로퍼티 키(property key)로 사용될 수 있습니다. 예를 들어 다음과 같은 객체를 만들 수 있습니다.
 
 ```javascript
-Copy code
+
 const myObj = {
   [Symbol("key")]: "value",
 };
@@ -135,13 +135,13 @@ Symbol 값은 다른 값과 혼동되지 않는 유일한 값을 나타내는데
 
 수학적으로 유효하지 않은 연산을 수행하는 경우
 ```javascript
-Copy code
+
 const result = 0 / 0; // NaN
 ```
 숫자가 아닌 값을 숫자로 변환하려는 경우
 
 ```javascript
-Copy code
+
 const result = parseInt("hello"); // NaN
 ```
 NaN은 자바스크립트에서 특수한 값으로 취급됩니다. NaN은 어떤 값과도 일치하지 않으며, 자신과도 일치하지 않습니다. 따라서, NaN === NaN의 결과는 false입니다.
@@ -151,7 +151,7 @@ NaN은 typeof 연산자를 사용해도 "number" 타입으로 판별됩니다. �
 NaN 값은 주로 오류 처리에 사용됩니다. 예를 들어, parseInt 함수는 문자열을 정수로 변환하는 함수입니다. 하지만, 인수로 전달된 문자열이 숫자가 아닐 경우 NaN 값을 반환합니다. 따라서, parseInt 함수의 결과가 NaN인지를 확인해 오류 처리를 할 수 있습니다.
 
 ```javascript
-Copy code
+
 const input = "hello";
 const num = parseInt(input);
 
@@ -169,7 +169,7 @@ Math.random()은 자바스크립트에서 난수(random number)를 생성하는 
 Math.random() 함수는 매번 실행될 때마다 다른 값을 반환하므로, 이를 활용하여 무작위로 선택하는 기능을 구현할 수 있습니다. 예를 들어, 0 이상 10 미만의 정수 중에서 무작위로 선택하고자 한다면, 다음과 같은 코드를 사용할 수 있습니다.
 
 ```javascript
-Copy code
+
 var randomInt = Math.floor(Math.random() * 10);
 ```
 위 코드에서 Math.floor() 함수는 주어진 숫자를 내림한 정수를 반환합니다. 따라서 Math.random() * 10은 0 이상 10 미만의 부동소수점 숫자를 반환하며, 이를 Math.floor() 함수로 내림하여 0 이상 9 이하의 정수를 얻을 수 있습니다.
@@ -182,7 +182,7 @@ parseInt()와 parseFloat() 함수는 자바스크립트에서 문자열을 정�
 parseInt() 함수는 문자열에서 정수를 추출하는 데 사용됩니다. 이 함수는 문자열을 해석하고, 첫 번째 숫자를 발견한 시점에서 나머지 문자를 무시하며, 이후 숫자가 아닌 문자가 나타날 때까지의 숫자만 추출합니다. 예를 들어, 다음 코드에서 parseInt() 함수는 문자열 "42"를 정수 42로 변환합니다.
 
 ```javascript
-Copy code
+
 var str = "42";
 var num = parseInt(str);
 console.log(num); // 42
@@ -190,7 +190,7 @@ console.log(num); // 42
 또한, parseInt() 함수는 문자열이 특정 진수로 표현된 경우, 해당 진수의 정수로 변환할 수 있습니다. parseInt() 함수는 두 개의 인수를 받을 수 있으며, 두 번째 인수는 변환할 진수(base)를 지정합니다. 예를 들어, 다음 코드에서 parseInt() 함수는 16진수 문자열 "FF"를 10진수 정수 255로 변환합니다.
 
 ```javascript
-Copy code
+
 var hex = "FF";
 var num = parseInt(hex, 16);
 console.log(num); // 255
@@ -198,7 +198,7 @@ console.log(num); // 255
 parseFloat() 함수는 문자열에서 부동소수점 숫자를 추출하는 데 사용됩니다. 이 함수는 parseInt() 함수와 유사하게 문자열을 해석하며, 첫 번째 소수점을 발견한 시점에서 나머지 문자를 무시하고, 이후 숫자가 아닌 문자가 나타날 때까지의 숫자만 추출합니다. 예를 들어, 다음 코드에서 parseFloat() 함수는 문자열 "3.14"를 부동소수점 숫자 3.14로 변환합니다.
 
 ```javascript
-Copy code
+
 var str = "3.14";
 var num = parseFloat(str);
 console.log(num); // 3.14
@@ -214,7 +214,7 @@ console.log(num); // 3.14
 따라서, Date() 객체에서 월을 나타내는 메서드를 사용할 때는 반환값에서 1을 더하여 실제 월을 구해야 합니다. 예를 들어, 다음 코드에서 date.getMonth() 메서드는 2를 반환합니다. 이는 실제 월인 3월에서 1을 뺀 값과 같습니다.
 
 ```javascript
-Copy code
+
 var date = new Date('2023-03-01');
 var month = date.getMonth() + 1;
 console.log(month); // 3
