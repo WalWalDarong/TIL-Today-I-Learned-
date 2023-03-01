@@ -26,7 +26,8 @@
 2. inline, inline-block, block 에 대해서
 
 # HTML
-### DOCTYPE
+## Head
+#### DOCTYPE
 DOCTYPE은 Document Type의 약자로, HTML 문서의 타입을 나타내는 선언문입니다. 이 선언문은 HTML 문서의 첫 부분에 위치하며, 웹 브라우저에게 해당 문서가 어떤 HTML 버전으로 작성되었는지 알려주는 역할을 합니다.
 
 예를 들어, HTML5로 작성된 문서라면 다음과 같이 DOCTYPE을 선언합니다.
@@ -41,3 +42,44 @@ DOCTYPE은 Document Type의 약자로, HTML 문서의 타입을 나타내는 선
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 ```
 이것은 XHTML 1.0 Transitional 문서임을 나타냅니다. DOCTYPE을 올바르게 선언하지 않으면 웹 브라우저가 문서를 올바르게 해석하지 못하거나 호환성 문제가 발생할 수 있습니다.
+
+#### title
+HTML에서 <title> 태그는 웹 페이지의 제목을 정의하는 역할을 합니다. 이 태그는 <head> 태그 안에 위치하며, 웹 브라우저의 탭에 표시되는 페이지의 제목이 됩니다. 또한 검색 엔진에서 페이지의 제목으로 사용되기도 합니다.
+
+예를 들어, 다음과 같은 코드를 작성하면 웹 페이지의 제목이 "Hello World"로 설정됩니다.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>Welcome to my website.</p>
+  </body>
+</html>
+```
+  이렇게 작성된 코드는 브라우저의 탭에 "Hello World"라는 제목이 표시되며, 검색 엔진에서도 페이지의 제목으로 사용됩니다.
+  
+  ####  <meta charset="UTF-8" />
+  HTML에서 charset은 문서의 문자 인코딩 방식을 지정하는 속성입니다. 문자 인코딩 방식은 문자나 문자열을 컴퓨터에서 처리하기 위해 부호화하는 방식을 의미하며, 다양한 문자 인코딩 방식이 존재합니다. charset 속성은 <meta> 태그를 사용하여 설정합니다.
+
+예를 들어, UTF-8 인코딩 방식을 사용하려면 다음과 같이 <meta> 태그를 <head> 태그 내에 추가합니다.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <!-- 웹 페이지의 내용 -->
+  </body>
+</html>
+  ```
+여기서 UTF-8은 유니코드 문자 인코딩 방식 중 하나로, 전 세계의 대부분의 문자를 지원합니다. 이 방식은 현재 가장 널리 사용되는 문자 인코딩 방식 중 하나입니다.
+
+따라서, charset 속성을 올바르게 설정하지 않으면 브라우저에서 문자가 깨져 나타날 수 있습니다. UTF-8은 전 세계의 다양한 언어와 문자를 지원하므로 대부분의 경우 올바른 선택입니다.
+  
