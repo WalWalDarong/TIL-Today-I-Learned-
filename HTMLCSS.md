@@ -24,3 +24,20 @@
   
   
 2. inline, inline-block, block 에 대해서
+
+# HTML
+### DOCTYPE
+DOCTYPE은 Document Type의 약자로, HTML 문서의 타입을 나타내는 선언문입니다. 이 선언문은 HTML 문서의 첫 부분에 위치하며, 웹 브라우저에게 해당 문서가 어떤 HTML 버전으로 작성되었는지 알려주는 역할을 합니다.
+
+예를 들어, HTML5로 작성된 문서라면 다음과 같이 DOCTYPE을 선언합니다.
+
+```html
+<!DOCTYPE html>
+```
+이것은 HTML5 문서임을 나타내며, 이전 버전의 HTML과의 호환성을 고려하여 DOCTYPE을 선언하고 싶다면 다음과 같이 작성할 수 있습니다.
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+```
+이것은 XHTML 1.0 Transitional 문서임을 나타냅니다. DOCTYPE을 올바르게 선언하지 않으면 웹 브라우저가 문서를 올바르게 해석하지 못하거나 호환성 문제가 발생할 수 있습니다.
