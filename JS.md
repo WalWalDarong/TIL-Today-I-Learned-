@@ -260,3 +260,6 @@ JSON은 웹 애플리케이션에서 데이터를 교환하기 위한 표준 형
 
 ### 0302
 e는 'keydown'이라는 event 객체를 의미한다. 한 함수 안에 (event, function(e))라고 되어있으면, 앞에가 인자다. 즉, e는 앞에서 지정한 event.
+
+### querySelector
+해당 하는  중 첫번째 것만 가져옴
