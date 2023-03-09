@@ -263,3 +263,5 @@ e는 'keydown'이라는 event 객체를 의미한다. 한 함수 안에 (event, 
 
 ### querySelector
 해당 하는  중 첫번째 것만 가져옴
+
+### Class 이름은 대문자로 
