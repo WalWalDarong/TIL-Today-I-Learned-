@@ -27,7 +27,7 @@ int main() {
   */
 
   int a = 3.141592;
-  cout << a << endl; //소수점은 무시됨
+  cout << a << endl; //3 (소수점은 무시됨)
 
   //강제적으로 데이터형 변환
   //typeName(a) (typeName)a
