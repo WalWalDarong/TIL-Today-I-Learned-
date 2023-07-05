@@ -17,6 +17,8 @@ int main() {
   //구조체를 return 할 수 있음
   //성능 저하 문제로 참조/pointer로 전달
 
+  //pointer 사용 방법
+
   Time day1 = { 5, 45 };
   Time day2 = { 4, 55 };
 
