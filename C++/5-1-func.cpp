@@ -3,8 +3,8 @@
 using namespace std;
 
 const float PIE = 3.14;
-void cheers(int n);
-float circle(int x);
+void cheers(int);
+float circle(int);
 
 int main() {
   /*
