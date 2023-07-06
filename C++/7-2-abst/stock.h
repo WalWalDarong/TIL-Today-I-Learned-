@@ -14,11 +14,12 @@ private: //public에 있는 함수들을 통해서만 값을 변경할 수 있�
   void set_total() {total_val = shares * share_val;}
 
 public: //private을 변경하는 다리 역할
-  void acquire(string, int ,float);
+  // void acquire(string, int ,float);
   void buy(int, float);
   void sell(int, float);
   void update(float);
   void show();
+  Stock(string, int ,float);
   Stock();
   ~Stock();
 };

@@ -16,12 +16,12 @@ int main() {
   2. 클래스 메서드 정의
   */
 
-  Stock temp;
-  temp.acquire("Panda", 100, 1000);
+  Stock temp = Stock("Panda", 100, 1000);
+  // Stock temp("Panda", 100, 1000);
+  //temp.acquire("Panda", 100, 1000);
   temp.show();
   temp.buy(10, 1200);
   temp.show();
   temp.sell(5, 800);
   temp.show();
-  
 }
