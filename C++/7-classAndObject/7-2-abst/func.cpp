@@ -28,6 +28,13 @@ void Stock::show(){
   cout << "주가: " << share_val << endl;
   cout << "주식 총 가치: " << total_val << endl;
 };
+
+Stock &Stock::topval(Stock& s){
+  if(s.share_val > share_val)
+    return s;
+  return *this; //this는 pointer
+};
+
 //생성자
 Stock::Stock(string co, int n, float pr){
   name = co;

@@ -19,6 +19,7 @@ public: //private을 변경하는 다리 역할
   void sell(int, float);
   void update(float);
   void show();
+  Stock &topval(Stock&);
   Stock(string, int ,float);
   Stock();
   ~Stock();

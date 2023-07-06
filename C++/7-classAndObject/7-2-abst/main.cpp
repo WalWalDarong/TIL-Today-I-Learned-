@@ -24,4 +24,28 @@ int main() {
   temp.show();
   temp.sell(5, 800);
   temp.show();
+
+  Stock s1("A", 10, 1000);
+  Stock s2("B", 20, 1200);
+  
+  cout << "A와 B 중 share_val이 큰 객체는\n";
+  s1.topval(s2).show();
+  
+  Stock s[4] = {
+    Stock("AA", 10, 1000),
+    Stock("BB", 20, 1200),
+    Stock("CC", 20, 1300),
+    Stock("DD", 20, 1400),
+  };
+
+  s[0].show();
+
+  Stock *first = &s[0];
+  for(int i = 0; i <4; i ++) {
+    first = &first->topval(s[i]);
+  }
+  
+  first->show();
+
+  return 0;
 }
