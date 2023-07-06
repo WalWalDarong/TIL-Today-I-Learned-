@@ -46,11 +46,11 @@ int main(){
 
   //continue: 뒤에 나오는 모든 내용이 무시되고 반복이 새로 시작됨, 반복문에서만 사용됨
 
-  cout << "문장을 입력하십시오.\n";
+  cout << "문장을 입력하십시오." << endl;
 
   char line[SIZE];
   cin.get(line, SIZE);
-  //!!error!! cin이 실행되지 않음
+  //!!error!! cin이 실행되지 않음 >> 위 cout, cin을 주석처리하면 정상 동작함
 
   cout << "입력하신 문장은 \"";
   int spaces = 0;
