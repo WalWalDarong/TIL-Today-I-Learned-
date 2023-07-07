@@ -65,7 +65,8 @@ NewTime::NewTime(int h, int m, int d) : Time(h, m){
   day = d;
 };
 
-void NewTime::print() {
+void NewTime::show() {
    std::cout << "일: " << day << std::endl;
-   show();
+   std::cout << "시간: " << getHour() << std::endl;
+   std::cout << "분: " << getMin() << std::endl;
 };
