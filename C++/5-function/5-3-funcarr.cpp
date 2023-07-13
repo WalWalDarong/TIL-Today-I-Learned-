@@ -37,7 +37,7 @@ int sumArr(int arr[], int n) {
 
 /*
 int sumArr(int* arr, int n){
-  cout << "size of arr " << sizeof arr << endl; //4, 배열 첫번째 요소의 크기 (나는 왜 8이지?)
+  cout << "size of arr " << sizeof arr << endl; //8, 배열 첫번째 요소의 크기 (OS마다 4 또는 8 다름)
   int total = 0;
 
   for(int i = 0; i < n; i++)
